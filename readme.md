@@ -3,7 +3,7 @@
 This is a technical assessment meant to provide an opportunity for you
 to demonstrate your skills as it relates to the varied tasks here at
 CompIQ. You should spend no more than 2 hours on the assessment. If you
-run out of time for a specific requirement, please provide a short
+cannot complete a requirement due to time, please provide a short
 response indicating how you would address the requirement.
 
 # Summary
@@ -50,6 +50,20 @@ The importer you\'ll design will need to import these Fugazi files via
 an API to the `FugaziImport` table of an sqLite database with the
 following schema:
 
+``` sql
+CREATE TABLE "FugaziImport" (
+    "Id"    INTEGER NOT NULL,
+    "PatientName"   TEXT NOT NULL,
+    "Address"   TEXT,
+    "PhoneNumber"   INTEGER,
+    "Injury"    TEXT,
+    "Treatment" INTEGER,
+    "Amount"    NUMERIC,
+    "Status"    TEXT,
+    PRIMARY KEY("Id" AUTOINCREMENT)
+);
+```
+
 Additionally, your api will need to return information about the Fugazi
 files.
 
@@ -95,11 +109,3 @@ Fork this repo and create as many commits as needed to satisfy the
 requirements. Upon completion, create a pull request to this repository
 and send a link to the PR to the hiring manager you are working with in
 an email.
-
-# Running Locally
-
-!!COMPLETE BEFORE SUBMISSION!!
-
-# Deploying to Production
-
-!!COMPLETE BEFORE SUBMISSION!!
