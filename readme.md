@@ -17,15 +17,15 @@ that record is contained in the row and is separated by spaces.
 
 Fugazi File Specification:
 
-  Name          Nice Name      Start   Length   Data Type   Notes
-  ------------- -------------- ------- -------- ----------- -------------------------------------------
-  patientName   Patient Name   0       25       string      
-  address       Address        25      50       string      
-  phoneNumber   Phone Number   75      10       int         No dashes
-  injury        Injury         85      30       string      Description of injury
-  treatment     Treatment      115     30       string      Description of treatment
-  amount        Amount         145     15       decimal     Cost of the claim in USD
-  status        Status         160     10       string      Whether the claim was approved or denied.
+  | Name          | Nice Name      | Start   | Length   | Data Type   | Notes
+  | ------------- | -------------- | ------- | -------- | ----------- | -------------------------------------------
+  | patientName   | Patient Name   | 0       | 25       | string      
+  | address       | Address        | 25      | 50       | string      
+  | phoneNumber   | Phone Number   | 75      | 10       | int         | No dashes
+  | injury        | Injury         | 85      | 30       | string      | Description of injury
+  | treatment     | Treatment      | 115     | 30       | string      | Description of treatment
+  | amount        | Amount         | 145     | 15       | decimal     | Cost of the claim in USD
+  | status        | Status         | 160     | 10       | string      | Whether the claim was approved or denied.
 
 An example record could look like this:
 
